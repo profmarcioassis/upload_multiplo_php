@@ -1,7 +1,8 @@
 <?php
-    $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $nomeBD = "bdUpload";
-    $conn = new mysqli($servidor, $usuario, $senha, $nomeBD);
+    define("HOST", "localhost");
+    define("USER", "root");
+    define("PASSWORD", "");
+    define("DB", "bdUpload");
+
+    $conn = new mysqli(HOST, USER, PASSWORD, DB);
 ?>

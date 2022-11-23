@@ -57,6 +57,7 @@
 						include "conexao.php"; //inclui o arquivo de conexão com o banco de dados
 						//define o comando sql para inserção do nome da imagem no banco de dados
 						$SQL = "INSERT INTO tbFile (nameFile, extensaoFile) VALUES ('".$novoNome."','".$extensao."')";
+						//echo $SQL;
 						if ($conn->query($SQL) === TRUE){ //verifica se o comando foi executado com sucesso
 							$msg[] = "<b>$name: </b> Upload realizado com sucesso.";
 						} 
